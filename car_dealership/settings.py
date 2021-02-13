@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'car.apps.CarConfig',
     'user_profile.apps.UserProfileConfig',
     'order.apps.OrderConfig',
-    'frontend.apps.FrontendConfig',
 ]
 
 AUTH_USER_MODEL = 'user.User'
@@ -116,14 +115,21 @@ WSGI_APPLICATION = 'car_dealership.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': '',
+#         'USER': 'postgres',
+#         'PASSWORD': '',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'car_dealership',
-        'USER': 'postgres',
-        'PASSWORD': '591563',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
