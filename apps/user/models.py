@@ -4,11 +4,11 @@ from django.contrib.auth.models import BaseUserManager, AbstractBaseUser
 
 
 class UserManager(BaseUserManager):
-    '''
+    """
     creating a manager for a custom user model
     https://docs.djangoproject.com/en/3.0/topics/auth/customizing/#writing-a-manager-for-a-custom-user-model
     https://docs.djangoproject.com/en/3.0/topics/auth/customizing/#a-full-example
-    '''
+    """
 
     def create_user(self, email, password=None):
         """
@@ -60,7 +60,7 @@ class User(AbstractBaseUser):
         return self.email
 
     class Meta:
-        '''
+        """
         to set table name in database
-        '''
+        """
         db_table = "login"

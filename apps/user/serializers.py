@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from user_profile.models import UserProfile
+from apps.user_profile.models import UserProfile
 from django.contrib.auth import authenticate
 from django.contrib.auth.models import update_last_login
 from rest_framework_jwt.settings import api_settings

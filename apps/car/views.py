@@ -5,7 +5,7 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from .models import Car
 from .serializers import CarSerializer
-from permissions import IsSafeOrAdmin
+from car_dealership.permissions import IsSafeOrAdmin
 
 
 class CarListView(ListAPIView):

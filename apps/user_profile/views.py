@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from .models import UserProfile
-from permissions import IsOwnerOrAdmin
+from car_dealership.permissions import IsOwnerOrAdmin
 from .serializers import UserProfileSerializer
 
 

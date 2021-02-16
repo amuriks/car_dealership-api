@@ -1,6 +1,6 @@
 import uuid
-from car.models import Car
-from user_profile.models import UserProfile
+from apps.car.models import Car
+from apps.user_profile.models import UserProfile
 from django.db import models
 
 
